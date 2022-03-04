@@ -16,6 +16,7 @@
 		0A026B3827D0EC7300E859B9 /* skyeng_test_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A026B3727D0EC7300E859B9 /* skyeng_test_taskTests.swift */; };
 		0A026B4227D0EC7300E859B9 /* skyeng_test_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A026B4127D0EC7300E859B9 /* skyeng_test_taskUITests.swift */; };
 		0A026B4427D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A026B4327D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift */; };
+		0A2E09C927D2523A0063190C /* tableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E09C827D2523A0063190C /* tableViewCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A026B3D27D0EC7300E859B9 /* skyeng-test-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "skyeng-test-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A026B4127D0EC7300E859B9 /* skyeng_test_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyeng_test_taskUITests.swift; sourceTree = "<group>"; };
 		0A026B4327D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyeng_test_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A2E09C827D2523A0063190C /* tableViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0A026B2027D0EC7100E859B9 /* AppDelegate.swift */,
 				0A026B2227D0EC7100E859B9 /* SceneDelegate.swift */,
 				0A026B2427D0EC7100E859B9 /* MainVC.swift */,
+				0A2E09C827D2523A0063190C /* tableViewCellTableViewCell.swift */,
 				0A026B2627D0EC7100E859B9 /* Main.storyboard */,
 				0A026B2927D0EC7300E859B9 /* Assets.xcassets */,
 				0A026B2B27D0EC7300E859B9 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				0A026B2527D0EC7100E859B9 /* MainVC.swift in Sources */,
 				0A026B2127D0EC7100E859B9 /* AppDelegate.swift in Sources */,
+				0A2E09C927D2523A0063190C /* tableViewCellTableViewCell.swift in Sources */,
 				0A026B2327D0EC7100E859B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

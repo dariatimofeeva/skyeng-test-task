@@ -15,6 +15,7 @@ struct WordData {
     var definition = ["deffinition" : "string"]
     var words = ["first", "second", "third", "fourth"]
 }
+var wordToDetailVC = ""
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -43,9 +44,31 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        wordToDetailVC = data.words[indexPath.row]
+        //print(wordToDetailVC)
+        performSegue(withIdentifier: "toDetailVC", sender: wordToDetailVC)
+//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard let destinationVC = segue.destination as? DetailVC else { return }
+//            destinationVC.word = wordToDetailVC
+//        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationVC = segue.destination as? DetailVC else { return }
+        destinationVC.word = wordToDetailVC
+    }
     
     @IBAction func findWordBtn(_ sender: UIButton) {
     }
-    
-}
 
+    
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //guard let destinationVC = segue.destination as? DetailVC else { return }
+        //как получить данные из cell?
+        //destinationVC.word = translationLabel.text
+    //}
+    
+
+
+}

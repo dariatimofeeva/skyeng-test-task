@@ -9,14 +9,20 @@ import UIKit
 
 class DetailVC: UIViewController {
 
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet weak var translationLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
+    @IBOutlet weak var image: UIImageView!
+   
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true)
     }
     
+    var word: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        wordLabel.text = word
     }
     
 

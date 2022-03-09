@@ -85,7 +85,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="translationLabel" destination="3ZG-pp-SwD" id="pKZ-If-kDE"/>
-                                            <segue destination="OXZ-HL-8gg" kind="showDetail" id="ZyI-cy-Axr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -115,11 +114,12 @@
                     <connections>
                         <outlet property="tableView" destination="tH2-mB-7z5" id="Hba-fz-txI"/>
                         <outlet property="wordSearchTF" destination="qgS-ly-w3h" id="HZk-Xw-5Gy"/>
+                        <segue destination="OXZ-HL-8gg" kind="showDetail" identifier="toDetailVC" id="chK-Vl-PpE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+            <point key="canvasLocation" x="117" y="82"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="jfd-zc-lAH">
@@ -192,10 +192,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Bd-4c-vJp"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="yhv-ns-TnO" id="d2Q-qZ-Xjv"/>
+                        <outlet property="image" destination="xJ5-hc-Jyc" id="FFn-vK-mIi"/>
+                        <outlet property="translationLabel" destination="HM5-uw-ugR" id="I0s-nn-RTL"/>
+                        <outlet property="wordLabel" destination="fc4-Qn-dqT" id="UK0-sf-9FS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ifc-HV-7LH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="82"/>
+            <point key="canvasLocation" x="901" y="82"/>
         </scene>
     </scenes>
     <resources>

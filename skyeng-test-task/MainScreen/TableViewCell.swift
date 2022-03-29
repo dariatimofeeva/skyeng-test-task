@@ -11,9 +11,6 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var translationLabel: UILabel!
     
-    //@IBAction func moreButtonTapped(_ sender: Any) {
-    //}
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

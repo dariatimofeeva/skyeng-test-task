@@ -18,6 +18,13 @@
 		0A026B4427D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A026B4327D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift */; };
 		0A28E34327D8C76F00935F32 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28E34227D8C76F00935F32 /* DetailVC.swift */; };
 		0A2E09C927D2523A0063190C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E09C827D2523A0063190C /* TableViewCell.swift */; };
+		0A720B3627DF85CD00AEA95E /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720B3527DF85CD00AEA95E /* Meaning.swift */; };
+		0A720B3827DFA0F600AEA95E /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A720B3727DFA0F600AEA95E /* DetailTableViewCell.swift */; };
+		0ABD4F3327EA1D500066270E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD4F3227EA1D500066270E /* ImageViewController.swift */; };
+		912369D127D9122000A384D1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912369D027D9122000A384D1 /* MainViewModel.swift */; };
+		912369D427D913FC00A384D1 /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912369D327D913FC00A384D1 /* TranslationService.swift */; };
+		912369D627D9145000A384D1 /* URLSession+dataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912369D527D9145000A384D1 /* URLSession+dataTask.swift */; };
+		912369D827D9159100A384D1 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912369D727D9159100A384D1 /* Words.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		0A026B4327D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyeng_test_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A28E34227D8C76F00935F32 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		0A2E09C827D2523A0063190C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0A720B3527DF85CD00AEA95E /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		0A720B3727DFA0F600AEA95E /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		0ABD4F3227EA1D500066270E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		912369D027D9122000A384D1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		912369D327D913FC00A384D1 /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		912369D527D9145000A384D1 /* URLSession+dataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+dataTask.swift"; sourceTree = "<group>"; };
+		912369D727D9159100A384D1 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +117,12 @@
 		0A026B1F27D0EC7100E859B9 /* skyeng-test-task */ = {
 			isa = PBXGroup;
 			children = (
+				912369CF27D911FA00A384D1 /* DetailScreen */,
+				912369CE27D911E900A384D1 /* MainScreen */,
+				912369D227D913E300A384D1 /* Service */,
 				0A026B2027D0EC7100E859B9 /* AppDelegate.swift */,
 				0A026B2227D0EC7100E859B9 /* SceneDelegate.swift */,
-				0A026B2427D0EC7100E859B9 /* MainVC.swift */,
-				0A28E34227D8C76F00935F32 /* DetailVC.swift */,
-				0A2E09C827D2523A0063190C /* TableViewCell.swift */,
+				0ABD4F3227EA1D500066270E /* ImageViewController.swift */,
 				0A026B2627D0EC7100E859B9 /* Main.storyboard */,
 				0A026B2927D0EC7300E859B9 /* Assets.xcassets */,
 				0A026B2B27D0EC7300E859B9 /* LaunchScreen.storyboard */,
@@ -131,6 +146,36 @@
 				0A026B4327D0EC7300E859B9 /* skyeng_test_taskUITestsLaunchTests.swift */,
 			);
 			path = "skyeng-test-taskUITests";
+			sourceTree = "<group>";
+		};
+		912369CE27D911E900A384D1 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E09C827D2523A0063190C /* TableViewCell.swift */,
+				0A026B2427D0EC7100E859B9 /* MainVC.swift */,
+				912369D027D9122000A384D1 /* MainViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		912369CF27D911FA00A384D1 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0A28E34227D8C76F00935F32 /* DetailVC.swift */,
+				0A720B3727DFA0F600AEA95E /* DetailTableViewCell.swift */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		912369D227D913E300A384D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				912369D327D913FC00A384D1 /* TranslationService.swift */,
+				912369D527D9145000A384D1 /* URLSession+dataTask.swift */,
+				912369D727D9159100A384D1 /* Words.swift */,
+				0A720B3527DF85CD00AEA95E /* Meaning.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +310,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A28E34327D8C76F00935F32 /* DetailVC.swift in Sources */,
+				0A720B3827DFA0F600AEA95E /* DetailTableViewCell.swift in Sources */,
 				0A026B2527D0EC7100E859B9 /* MainVC.swift in Sources */,
 				0A026B2127D0EC7100E859B9 /* AppDelegate.swift in Sources */,
+				912369D627D9145000A384D1 /* URLSession+dataTask.swift in Sources */,
 				0A2E09C927D2523A0063190C /* TableViewCell.swift in Sources */,
+				0A720B3627DF85CD00AEA95E /* Meaning.swift in Sources */,
 				0A026B2327D0EC7100E859B9 /* SceneDelegate.swift in Sources */,
+				912369D427D913FC00A384D1 /* TranslationService.swift in Sources */,
+				912369D827D9159100A384D1 /* Words.swift in Sources */,
+				0ABD4F3327EA1D500066270E /* ImageViewController.swift in Sources */,
+				912369D127D9122000A384D1 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
